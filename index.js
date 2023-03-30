@@ -65,7 +65,7 @@ function allWagesFor(empObj){
 function calculatePayroll(empArray){
     const reducer=(accumulator, obj)=>{
         let total=allWagesFor(obj)
-        return accumulator=+total
+        return accumulator+total
     }
     let total=empArray.reduce(reducer,0)
     return total
